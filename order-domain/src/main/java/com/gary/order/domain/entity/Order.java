@@ -6,7 +6,7 @@ import com.gary.order.types.OId;
 import com.gary.order.types.ONumber;
 import com.gary.order.types.OStatus;
 import com.gary.order.types.PayType;
-import com.gary.order.types.UserId;
+import com.gary.order.types.UId;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,9 +25,9 @@ public class Order {
     private ODate payAt;
     private PayType payType;
     private ODate createAt;
-    private UserId createBy;
+    private UId createBy;
     private ODate updateAt;
-    private UserId updateBy;
+    private UId updateBy;
 
     public Order(ONumber orderNo, OStatus status, Money amount) {
         this.orderNo = orderNo;

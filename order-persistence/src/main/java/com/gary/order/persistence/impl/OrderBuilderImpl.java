@@ -9,7 +9,7 @@ import com.gary.order.types.OId;
 import com.gary.order.types.ONumber;
 import com.gary.order.types.OStatus;
 import com.gary.order.types.PayType;
-import com.gary.order.types.UserId;
+import com.gary.order.types.UId;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -36,9 +36,9 @@ public class OrderBuilderImpl implements OrderBuilder {
         order.setPayType(new PayType(orderDO.getPayType()));
         order.setAmount(new Money(orderDO.getAmount()));
         order.setCreateAt(new ODate(orderDO.getCreateAt()));
-        order.setCreateBy(new UserId(orderDO.getCreateBy()));
+        order.setCreateBy(new UId(orderDO.getCreateBy()));
         order.setUpdateAt(new ODate(orderDO.getUpdateAt()));
-        order.setUpdateBy(new UserId(orderDO.getUpdateBy()));
+        order.setUpdateBy(new UId(orderDO.getUpdateBy()));
         order.setPayAt(new ODate(orderDO.getPayAt()));
         return null;
     }

@@ -7,6 +7,6 @@ import lombok.Setter;
 @Setter
 @Getter
 @AllArgsConstructor
-public class UserId {
-    private Long id;
+public class UName {
+    private String value;
 }
